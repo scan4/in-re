@@ -1,0 +1,16 @@
+.venv
+node_modules
+__pycache__
+*.pyc
+.git
+.gitignore
+front/node_modules
+front/dist
+*.log
+nohup.out
+/tmp
+redis-7.2.5
+back/models/bge-small-zh/**/*.safetensors
+pgdata
+Dockerfile
+docker-compose.yml

@@ -1,0 +1,36 @@
+# ── 环境变量（含密钥/token，严禁上传） ──
+.env
+.env.docker
+.env.local
+.env.production
+
+# ── 本地大文件 / 临时文件 ──
+*.whl
+*.tar.gz
+*.tar
+torch_cpu.whl
+in-re-agent-docker.tar.gz
+in-re-agent-images.tar
+
+# ── BGE 模型（体积大，不放 git；部署时手动拷贝或用 Git LFS）──
+back/models/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.log
+
+# ── Node ──
+node_modules/
+front/dist/
+
+# ── IDE ──
+.idea/
+.vscode/
+*.swp
+
+# ── Docker 数据 ──
+pgdata/

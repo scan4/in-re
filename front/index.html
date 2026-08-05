@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智能推荐</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #f8f9fa; }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    /* 嵌入模式: 父级设置宽高 */
+    .widget-root { width: 100%; height: 100%; overflow-y: auto; }
+    @media (max-width: 500px) {
+      .widget-root { padding: 8px !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root" class="widget-root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
